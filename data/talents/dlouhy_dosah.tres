@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "dlouhy_dosah"
+display_name = "Dlouhý dosah"
+description = "Větší účinný dosah teleskopických nástrojů."
+branch = "technika"
+tier = 1
+column = 0
+cost = 1
+max_rank = 1
+requires = PackedStringArray("sikovny_pracovnik")
+effect = "tele_reach"
+values = PackedFloat32Array(1.2)
+stage = 3

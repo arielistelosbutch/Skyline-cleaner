@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "sikovny_pracovnik"
+display_name = "Šikovný pracovník"
+description = "Rychlejší umisťování vybavení: s židlí chodíš plnou rychlostí a položíš ji i dál od sebe."
+branch = "technika"
+tier = 0
+column = 0
+cost = 1
+max_rank = 1
+requires = PackedStringArray()
+effect = "carry"
+values = PackedFloat32Array(1.0)
+stage = 2

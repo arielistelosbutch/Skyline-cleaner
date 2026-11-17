@@ -1,0 +1,18 @@
+# Godot 4
+.godot/
+/android/
+*.translation
+
+# Exporty a buildy (nahrávají se do GitHub Releases, ne do repozitáře)
+export_presets.cfg
+build/
+builds/
+export/
+*.exe
+*.pck
+*.zip
+
+# Systémové soubory
+.DS_Store
+Thumbs.db
+desktop.ini

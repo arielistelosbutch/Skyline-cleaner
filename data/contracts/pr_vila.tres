@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "pr_vila"
+title = "Moderní vila Horvátových"
+building_type = "Moderní vila"
+location = "Předměstí – Javorov, sever ulice"
+description = "Bílá vila s velkými okny. Pan Horvát je pečlivý – chce sklo bez jediné šmouhy. Horní okna jsou vysoko, s malým žebříkem nedosáhneš na horní okraj. Vezmi výsuvný žebřík."
+dirt_level_text = "Střední (městský prach, šmouhy)"
+recommended_equipment = "Výsuvný žebřík, profesionální stěrka, saponát"
+reward_money = 2600
+reward_xp = 380
+bonus_goal = "Nepovinné: hotovo do 28 minut práce = +300 Kč."
+window_ids = PackedStringArray("pr_vila_w1", "pr_vila_w2", "pr_vila_w3", "pr_vila_w4", "pr_vila_w5", "pr_vila_w6", "pr_vila_w7")
+map_position = Vector2(1988, -11)
+required_level = 5
+bonus_time_min = 28.0
+bonus_money = 300
+dirt_profile_id = "mesto_prach"

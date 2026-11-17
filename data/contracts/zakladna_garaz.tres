@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "zakladna_garaz"
+title = "Okna vlastní firmy"
+building_type = "Garáž – základna Clear View"
+location = "Venkov – Lipová Lhota"
+description = "Než vyrazíš k prvnímu zákazníkovi, dej do pořádku vlastní garáž. Firma na mytí oken se špinavými okny by moc zákazníků nesehnala. Tři okna, trocha prachu a bláto od kol – ideální na zkoušku nástrojů."
+dirt_level_text = "Lehké (prach, bláto)"
+recommended_equipment = "Starý hadr, saponát, dřevěná židle"
+reward_money = 120
+reward_xp = 40
+bonus_goal = ""
+window_ids = PackedStringArray("zakladna_w1_prach", "zakladna_w2_blato", "zakladna_w3_vrata")
+map_position = Vector2(-34, -14)
+required_level = 1
+repeat_factor = 0.5

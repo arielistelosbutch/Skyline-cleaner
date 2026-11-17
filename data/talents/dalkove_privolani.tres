@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "dalkove_privolani"
+display_name = "Dálkové přivolání"
+description = "V tabletu (Roboti) přivoláš všechny roboty k sobě – ze skla i ze stojanu, odkudkoli."
+branch = "robotika"
+tier = 2
+column = 0
+cost = 2
+max_rank = 1
+requires = PackedStringArray("pecliva_podlozka")
+effect = "robot_recall"
+values = PackedFloat32Array(1.0)
+stage = 5

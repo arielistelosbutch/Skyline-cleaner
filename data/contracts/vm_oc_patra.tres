@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "vm_oc_patra"
+title = "OC Horizont – pásová okna 1. až 3. patra"
+building_type = "Obchodní centrum (4 podlaží)"
+location = "Velkoměsto – Horizont, jih bulváru"
+description = "Dlouhé pásy oken nad výlohami. Osmnáct tabulí po pěti metrech – plošinou podél celé fasády, nebo na ně pošli drony."
+dirt_level_text = "Střední (prach)"
+recommended_equipment = "Závěsná plošina nebo drony"
+reward_money = 16500
+reward_xp = 1900
+bonus_goal = "Nepovinné: hotovo do 70 minut práce = +1650 Kč."
+window_ids = PackedStringArray("vm_oc_p1_1", "vm_oc_p1_2", "vm_oc_p1_3", "vm_oc_p1_4", "vm_oc_p1_5", "vm_oc_p1_6", "vm_oc_p2_1", "vm_oc_p2_2", "vm_oc_p2_3", "vm_oc_p2_4", "vm_oc_p2_5", "vm_oc_p2_6", "vm_oc_p3_1", "vm_oc_p3_2", "vm_oc_p3_3", "vm_oc_p3_4", "vm_oc_p3_5", "vm_oc_p3_6")
+map_position = Vector2(-38, 2611.5)
+required_level = 15
+bonus_time_min = 70.0
+bonus_money = 1650
+dirt_profile_id = "mesto_prach"

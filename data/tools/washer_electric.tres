@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "washer_electric"
+display_name = "Elektrický stěrač s nádržkou"
+description = "Ruční elektrický stěrač s malou nádržkou na přípravek. U vody ho naplníš jako rozprašovač a pak sám dávkuje přípravek na sklo, dokud s ním jezdíš – bez stříkání [F]. Nádržka vydrží asi 90 sekund jízdy, potom zase k vodě. Lišta 28 cm stírá jako stěrka."
+visual = "squeegee"
+color = Color(0.2, 0.62, 0.55, 1)
+price = 1450
+required_rep = 3
+required_level = 8
+shop_order = 10
+shape = "blade"
+radius = 0.14
+blade_width = 0.28
+blade_depth = 0.025
+strength = 9.0
+tough_penalty = 3.2
+wet_bonus = 5.0
+dry_mult = 0.12
+initial_press = 0.02
+stroke_bonus = 0.7
+dries = 1.0
+electric = true
+auto_dose = 90.0

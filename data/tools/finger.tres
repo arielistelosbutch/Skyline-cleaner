@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "finger"
+display_name = "Prst (kreslení do prachu)"
+description = "Vlastní prst v rukavici. Okno jím neumyješ, ale do prachu na skle nakreslíš srdíčko, smajlíka nebo vzkaz."
+kind = "rag"
+visual = "finger"
+color = Color(0.93, 0.93, 0.9, 1)
+price = 0
+shop_order = 99
+radius = 0.013
+strength = 7.0
+tough_penalty = 8.0
+kind_mult = PackedFloat32Array(1, 0.7, 0.6, 0.3, 0.5, 1, 0.2)
+initial_press = 0.15
+soil_rate = 0.0

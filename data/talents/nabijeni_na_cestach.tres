@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "nabijeni_na_cestach"
+display_name = "Nabíjení na cestách"
+description = "Roboti, které neseš u sebe, se během jízdy autobusem nabijí do plna."
+branch = "robotika"
+tier = 1
+column = 1
+cost = 1
+max_rank = 1
+requires = PackedStringArray("vetsi_baterie")
+effect = "robot_travel_charge"
+values = PackedFloat32Array(1.0)
+stage = 5

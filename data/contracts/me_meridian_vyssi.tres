@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "me_meridian_vyssi"
+title = "Meridian – kanceláře 4. až 7. patro"
+building_type = "Kancelářská budova (8 podlaží)"
+location = "Město – Brodec, sever třídy"
+description = "Nejvyšší patra Meridianu – největší zakázka ve městě. Šestnáct velkých tabulí skla vysoko nad třídou. Plošinou projedeš celou fasádu, jen si hlídej nádržku s přípravkem."
+dirt_level_text = "Střední až silná (smog, zaschlé kapky)"
+recommended_equipment = "Závěsná plošina (oprávnění), stěrka 45 cm, velká nádržka"
+reward_money = 11800
+reward_xp = 1500
+bonus_goal = "Nepovinné: hotovo do 80 minut práce = +1180 Kč."
+window_ids = PackedStringArray("me_meridian_p4_1", "me_meridian_p4_2", "me_meridian_p4_3", "me_meridian_p4_4", "me_meridian_p5_1", "me_meridian_p5_2", "me_meridian_p5_3", "me_meridian_p5_4", "me_meridian_p6_1", "me_meridian_p6_2", "me_meridian_p6_3", "me_meridian_p6_4", "me_meridian_p7_1", "me_meridian_p7_2", "me_meridian_p7_3", "me_meridian_p7_4")
+map_position = Vector2(-2234, -10)
+required_level = 10
+bonus_time_min = 80.0
+bonus_money = 1180
+dirt_profile_id = "mesto_smog"

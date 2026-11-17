@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "me_od_vylohy"
+title = "Obchodní dům Brodec – výlohy do třídy"
+building_type = "Obchodní dům"
+location = "Město – Brodec, jih třídy"
+description = "Vedoucí obchodního domu chce před víkendovou slevovou akcí zářící výlohy. Velké tabule skla jsou od smogu z třídy a otisků kolemjdoucích. Výlohy jsou vysoké – hodí se teleskopická tyč nebo žebřík."
+dirt_level_text = "Střední (smog, otisky)"
+recommended_equipment = "Teleskopická tyč nebo žebřík, stěrka 45 cm, odmašťovač"
+reward_money = 2600
+reward_xp = 420
+bonus_goal = "Nepovinné: hotovo do 30 minut práce = +260 Kč."
+window_ids = PackedStringArray("me_od_vyloha_w1", "me_od_vyloha_w2", "me_od_vyloha_w3", "me_od_vyloha_w4")
+map_position = Vector2(-2227, 9)
+required_level = 8
+bonus_time_min = 30.0
+bonus_money = 260
+dirt_profile_id = "vyloha_mesto"

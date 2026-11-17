@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "fold_mop"
+display_name = "Skládací mop"
+description = "Mop z mikrovlákna na skládací tyči: složený v ruce čistí skoro jako mikrohadřík, a když sjedeš výš, sám se vysune až o 1,7 m jako teleskopická tyč. Natažený čistí slaběji – na tyči se nedá tolik přitlačit."
+visual = "sponge"
+color = Color(0.55, 0.4, 0.8, 1)
+price = 1100
+required_rep = 3
+required_level = 8
+shop_order = 7
+radius = 0.09
+strength = 5.6
+tough_penalty = 5.0
+wet_bonus = 3.6
+dry_mult = 0.85
+initial_press = 0.04
+spreads = 0.4
+reach_bonus = 1.7
+fold = true
+fold_mult = 0.6
+soil_rate = 0.6

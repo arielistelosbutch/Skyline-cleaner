@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DirtProfile" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/dirt_profile.gd" id="1_dp"]
+
+[resource]
+script = ExtResource("1_dp")
+id = "po_bource"
+display_name = "Po bouřce"
+dust = 0.6
+streaks = 1.6
+drops = 1.4
+bird = 0.3
+mud = 0.9
+grease = 0.0
+pollen = 0.0
+heavy = 0.0

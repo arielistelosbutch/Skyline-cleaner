@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DirtProfile" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/dirt_profile.gd" id="1_dp"]
+
+[resource]
+script = ExtResource("1_dp")
+id = "hotel_okna"
+display_name = "Hotelová okna (kapky, šmouhy, holubi)"
+dust = 1.0
+streaks = 1.2
+drops = 1.3
+bird = 0.9
+mud = 0.0
+grease = 0.5
+pollen = 0.0
+heavy = 0.2

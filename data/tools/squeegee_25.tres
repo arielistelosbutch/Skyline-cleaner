@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "squeegee_25"
+display_name = "Gumová stěrka 25 cm"
+description = "Široký záběr pro dlouhé souvislé tahy. Stírá vodu i rozpuštěnou špínu – na mokrém skle je rychlá, nasucho skoro nečistí. Nejlíp funguje při plynulém tahu bez zastavování."
+kind = "rag"
+visual = "squeegee"
+color = Color(0.2, 0.22, 0.25, 1)
+price = 520
+shop_order = 4
+shape = "blade"
+radius = 0.04
+blade_width = 0.25
+blade_depth = 0.02
+strength = 9.0
+tough_penalty = 3.0
+wet_bonus = 6.0
+dry_mult = 0.1
+initial_press = 0.0
+stroke_bonus = 1.0
+dries = 1.0

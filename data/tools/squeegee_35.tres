@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "squeegee_35"
+display_name = "Profesionální stěrka 35 cm"
+description = "Profesionální stěrka s měkkou gumou a širokou lištou. Velká okna zvládneš na pár tahů – pořád ale potřebuje mokré sklo."
+kind = "rag"
+visual = "squeegee"
+color = Color(0.12, 0.42, 0.55, 1)
+price = 1350
+required_rep = 3
+required_level = 3
+shop_order = 5
+shape = "blade"
+radius = 0.04
+blade_width = 0.35
+blade_depth = 0.022
+strength = 10.5
+tough_penalty = 2.5
+wet_bonus = 7.0
+dry_mult = 0.12
+initial_press = 0.0
+stroke_bonus = 1.0
+dries = 1.0

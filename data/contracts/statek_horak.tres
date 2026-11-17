@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "statek_horak"
+title = "Statek Horákových"
+building_type = "Statek a chlév"
+location = "Venkov – východní okraj vesnice"
+description = "Velká rodinná zakázka. Okna statku i chléva pokrývá silná špína v několika vrstvách, bláto a trus. Krusta jde dolů ztuha, ale pod ní je už jen měkká špína. Vysoká okna – vezmi židli."
+dirt_level_text = "Silné"
+recommended_equipment = "Profesionální přípravek, houbička, stěrka, židle"
+reward_money = 1300
+reward_xp = 240
+bonus_goal = "Nepovinné: hotovo do 25 minut práce = +200 Kč."
+window_ids = PackedStringArray("statek_w1", "statek_w2", "statek_w3", "statek_w4", "statek_w5", "chlev_w1", "chlev_w2")
+map_position = Vector2(84, -21)
+required_level = 3
+bonus_time_min = 25.0
+bonus_money = 200

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "pr_bytovy_dum"
+title = "Bytový dům Javorová 12 – uliční fasáda"
+building_type = "Bytový dům (4 podlaží)"
+location = "Předměstí – Javorov, sever ulice"
+description = "Společenství vlastníků objednalo mytí oken v patrech do ulice. Žebřík tak vysoko nesahá: vyjdi schodištěm na střechu, připni se lanem ke kotvicímu bodu a spouštěj se po fasádě. Odepnout se můžeš nahoře u kotvy nebo dole na zemi."
+dirt_level_text = "Střední (prach, trus, šmouhy)"
+recommended_equipment = "Úvazek a lano, saponát, stěrka"
+reward_money = 3800
+reward_xp = 520
+bonus_goal = "Nepovinné: hotovo do 40 minut práce = +400 Kč."
+window_ids = PackedStringArray("pr_byty_p1_1", "pr_byty_p1_2", "pr_byty_p1_3", "pr_byty_p1_4", "pr_byty_p2_1", "pr_byty_p2_2", "pr_byty_p2_3", "pr_byty_p2_4", "pr_byty_p3_1", "pr_byty_p3_2", "pr_byty_p3_3", "pr_byty_p3_4")
+map_position = Vector2(2022, -11)
+required_level = 6
+bonus_time_min = 40.0
+bonus_money = 400
+dirt_profile_id = "fasada_vyska"

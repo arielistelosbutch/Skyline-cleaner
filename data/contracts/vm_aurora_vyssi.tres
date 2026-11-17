@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "vm_aurora_vyssi"
+title = "Věž Aurora – 12. až 17. patro"
+building_type = "Mrakodrap (18 podlaží)"
+location = "Velkoměsto – Horizont, sever bulváru"
+description = "Horní patra Věže Aurora, přes čtyřicet metrů nad bulvárem. Dvacet čtyři obřích tabulí. Pusť na ně drony a mezitím jeď plošinou na ta, která drony nezvládnou."
+dirt_level_text = "Silná (smog, ptáci)"
+recommended_equipment = "Drony a závěsná plošina"
+reward_money = 24000
+reward_xp = 2700
+bonus_goal = "Nepovinné: hotovo do 90 minut práce = +2400 Kč."
+window_ids = PackedStringArray("vm_aurora_p12_1", "vm_aurora_p12_2", "vm_aurora_p12_3", "vm_aurora_p12_4", "vm_aurora_p13_1", "vm_aurora_p13_2", "vm_aurora_p13_3", "vm_aurora_p13_4", "vm_aurora_p14_1", "vm_aurora_p14_2", "vm_aurora_p14_3", "vm_aurora_p14_4", "vm_aurora_p15_1", "vm_aurora_p15_2", "vm_aurora_p15_3", "vm_aurora_p15_4", "vm_aurora_p16_1", "vm_aurora_p16_2", "vm_aurora_p16_3", "vm_aurora_p16_4", "vm_aurora_p17_1", "vm_aurora_p17_2", "vm_aurora_p17_3", "vm_aurora_p17_4")
+map_position = Vector2(-40, 2588.5)
+required_level = 16
+bonus_time_min = 90.0
+bonus_money = 2400
+dirt_profile_id = "mesto_smog"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DirtProfile" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/dirt_profile.gd" id="1_dp"]
+
+[resource]
+script = ExtResource("1_dp")
+id = "sklenik_pyl"
+display_name = "Skleník – pyl a prach"
+dust = 0.6
+streaks = 0.5
+drops = 0.7
+bird = 0.3
+mud = 0.0
+grease = 0.0
+pollen = 1.2
+heavy = 0.0

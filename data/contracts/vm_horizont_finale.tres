@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "vm_horizont_finale"
+title = "Horizont Tower – vrchní patra (finále)"
+building_type = "Mrakodrap (28 podlaží)"
+location = "Velkoměsto – Horizont, sever bulváru"
+description = "Největší zakázka v zemi: třicet oken pod art-deco korunou nejvyšší budovy Horizontu, skoro sto metrů nad zemí. Kdo umyje Horizont Tower, je jednička v oboru. Drony z depa, plošina s turbo navijáky – ukaž, co Clear View umí."
+dirt_level_text = "Silná (výšková špína, smog)"
+recommended_equipment = "Drony z depa, závěsná plošina (turbo navijáky se hodí)"
+reward_money = 42000
+reward_xp = 4000
+bonus_goal = "Nepovinné: hotovo do 120 minut práce = +4200 Kč."
+window_ids = PackedStringArray("vm_horizont_p22_1", "vm_horizont_p22_2", "vm_horizont_p22_3", "vm_horizont_p22_4", "vm_horizont_p22_5", "vm_horizont_p23_1", "vm_horizont_p23_2", "vm_horizont_p23_3", "vm_horizont_p23_4", "vm_horizont_p23_5", "vm_horizont_p24_1", "vm_horizont_p24_2", "vm_horizont_p24_3", "vm_horizont_p24_4", "vm_horizont_p24_5", "vm_horizont_p25_1", "vm_horizont_p25_2", "vm_horizont_p25_3", "vm_horizont_p25_4", "vm_horizont_p25_5", "vm_horizont_p26_1", "vm_horizont_p26_2", "vm_horizont_p26_3", "vm_horizont_p26_4", "vm_horizont_p26_5", "vm_horizont_p27_1", "vm_horizont_p27_2", "vm_horizont_p27_3", "vm_horizont_p27_4", "vm_horizont_p27_5")
+map_position = Vector2(34, 2588.5)
+required_level = 17
+bonus_time_min = 120.0
+bonus_money = 4200
+dirt_profile_id = "fasada_vyska"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DirtProfile" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/dirt_profile.gd" id="1_dp"]
+
+[resource]
+script = ExtResource("1_dp")
+id = "obchod_mastnota"
+display_name = "Výloha – otisky a mastnota"
+dust = 0.7
+streaks = 0.6
+drops = 0.6
+bird = 0.0
+mud = 0.0
+grease = 1.0
+pollen = 0.0
+heavy = 0.0

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "pevna_ruka"
+display_name = "Pevná ruka"
+description = "O 6 % rychlejší ruční čištění za každou úroveň (hadr, houbička, stěrka)."
+branch = "zrucnost"
+tier = 0
+column = 0
+cost = 1
+max_rank = 2
+requires = PackedStringArray()
+effect = "clean_mult"
+values = PackedFloat32Array(1.06, 1.12)
+stage = 2

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DirtProfile" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/dirt_profile.gd" id="1_dp"]
+
+[resource]
+script = ExtResource("1_dp")
+id = "chata_blato"
+display_name = "Chata u rybníka – bláto"
+dust = 0.8
+streaks = 0.6
+drops = 0.8
+bird = 0.5
+mud = 1.0
+grease = 0.0
+pollen = 0.0
+heavy = 0.0

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "vm_aurora_nizsi"
+title = "Věž Aurora – 1. až 4. patro"
+building_type = "Mrakodrap (18 podlaží)"
+location = "Velkoměsto – Horizont, sever bulváru"
+description = "Správa Věže Aurora chce nejdřív umýt nižší kancelářská patra. Šestnáct velkých tabulí – plošinou se sem dostaneš rychle, nahoře je výtah."
+dirt_level_text = "Střední (smog, zaschlé kapky)"
+recommended_equipment = "Závěsná plošina (oprávnění)"
+reward_money = 14500
+reward_xp = 1700
+bonus_goal = "Nepovinné: hotovo do 60 minut práce = +1450 Kč."
+window_ids = PackedStringArray("vm_aurora_p1_1", "vm_aurora_p1_2", "vm_aurora_p1_3", "vm_aurora_p1_4", "vm_aurora_p2_1", "vm_aurora_p2_2", "vm_aurora_p2_3", "vm_aurora_p2_4", "vm_aurora_p3_1", "vm_aurora_p3_2", "vm_aurora_p3_3", "vm_aurora_p3_4", "vm_aurora_p4_1", "vm_aurora_p4_2", "vm_aurora_p4_3", "vm_aurora_p4_4")
+map_position = Vector2(-40, 2588.5)
+required_level = 14
+bonus_time_min = 60.0
+bonus_money = 1450
+dirt_profile_id = "mesto_smog"

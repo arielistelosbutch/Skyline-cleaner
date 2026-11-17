@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "dobry_vyjednavac"
+display_name = "Dobrý vyjednavač"
+description = "Vyšší odměny za zakázky: +10 % za každou úroveň."
+branch = "podnikani"
+tier = 0
+column = 0
+cost = 1
+max_rank = 2
+requires = PackedStringArray()
+effect = "reward"
+values = PackedFloat32Array(1.1, 1.2)
+stage = 2

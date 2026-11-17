@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "brush_electric"
+display_name = "Elektrický čisticí kartáč"
+description = "Akumulátorový kartáč s rotační hlavou. Točí se a myje sám – stačí ho přitlačit a pomalu s ním jezdit po skle, drhnout ze strany na stranu není potřeba. Odolné nečistoty – zaschlé bláto, trus i krustu – rozbije mnohem rychleji než ruka. Na mokrém skle je ještě účinnější."
+kind = "rag"
+visual = "brush"
+color = Color(0.95, 0.55, 0.15, 1)
+price = 1650
+required_rep = 3
+required_level = 5
+shop_order = 8
+radius = 0.09
+strength = 6.5
+tough_penalty = 1.4
+wet_bonus = 3.0
+dry_mult = 0.9
+kind_mult = PackedFloat32Array(1, 1, 1.6, 1.6, 1.1, 1, 1.8)
+initial_press = 0.08
+electric = true
+spin = 0.6

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "presne_trysky"
+display_name = "Přesné trysky"
+description = "Mycí hlavy dronů tlačí o 30 % víc a lépe si poradí s odolnou špínou – méně oken nechají tobě."
+branch = "robotika"
+tier = 4
+column = 1
+cost = 2
+max_rank = 1
+requires = PackedStringArray("rychle_vrtule")
+effect = "drone_power"
+values = PackedFloat32Array(1.3)
+stage = 6

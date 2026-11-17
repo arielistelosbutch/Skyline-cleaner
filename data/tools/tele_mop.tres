@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "tele_mop"
+display_name = "Teleskopická tyč s mopem"
+description = "Výsuvná tyč s pracovním návlekem z mikrovlákna. Dosáhneš o 1,7 m výš i trochu do stran. Na tyči se ale nedá tak přitlačit – čistí slaběji než ruka a nejlíp funguje na mokrém skle."
+kind = "rag"
+visual = "sponge"
+color = Color(0.35, 0.65, 0.9, 1)
+price = 760
+required_rep = 2
+required_level = 4
+shop_order = 6
+radius = 0.1
+strength = 3.0
+tough_penalty = 5.5
+wet_bonus = 4.5
+dry_mult = 0.75
+initial_press = 0.02
+spreads = 0.6
+reach_bonus = 1.7
+soil_rate = 0.7

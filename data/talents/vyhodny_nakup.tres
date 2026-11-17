@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "vyhodny_nakup"
+display_name = "Výhodný nákup"
+description = "Nižší ceny vybavení v obchodě (−10 %)."
+branch = "podnikani"
+tier = 1
+column = 0
+cost = 1
+max_rank = 1
+requires = PackedStringArray("dobry_vyjednavac")
+effect = "price"
+values = PackedFloat32Array(0.9)
+stage = 2

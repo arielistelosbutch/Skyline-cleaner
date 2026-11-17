@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "vm_oc_vylohy"
+title = "OC Horizont – výlohy v přízemí"
+building_type = "Obchodní centrum (4 podlaží)"
+location = "Velkoměsto – Horizont, jih bulváru"
+description = "Šest obrovských výloh obchodního centra. Prach z bulváru a otisky dětských rukou – klasika. Na horní okraj dosáhneš s teleskopickou tyčí nebo ze žebříku."
+dirt_level_text = "Střední (prach, otisky)"
+recommended_equipment = "Teleskopická tyč nebo žebřík, stěrka 45 cm"
+reward_money = 6500
+reward_xp = 900
+bonus_goal = "Nepovinné: hotovo do 25 minut práce = +650 Kč."
+window_ids = PackedStringArray("vm_oc_vyloha_w1", "vm_oc_vyloha_w2", "vm_oc_vyloha_w3", "vm_oc_vyloha_w4", "vm_oc_vyloha_w5", "vm_oc_vyloha_w6")
+map_position = Vector2(-38, 2611.5)
+required_level = 14
+bonus_time_min = 25.0
+bonus_money = 650
+dirt_profile_id = "vyloha_mesto"

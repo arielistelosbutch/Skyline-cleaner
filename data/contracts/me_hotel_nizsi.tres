@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "me_hotel_nizsi"
+title = "Hotel Grand – pokoje v 1. a 2. patře"
+building_type = "Hotel (6 podlaží)"
+location = "Město – Brodec, sever třídy"
+description = "Provozní hotelu chce před příjezdem zájezdu umýt okna pokojů v nižších patrech. Pokoje jsou obsazené, tak pracuj pečlivě a bez šmouh. Na střeše je závěsná plošina – k obsluze potřebuješ oprávnění."
+dirt_level_text = "Lehká až střední (prach, kapky)"
+recommended_equipment = "Závěsná plošina (oprávnění) nebo dlouhý žebřík, stěrka 30 cm"
+reward_money = 5400
+reward_xp = 780
+bonus_goal = "Nepovinné: hotovo do 45 minut práce = +540 Kč."
+window_ids = PackedStringArray("me_hotel_p1_1", "me_hotel_p1_2", "me_hotel_p1_3", "me_hotel_p1_4", "me_hotel_p1_5", "me_hotel_p1_6", "me_hotel_p2_1", "me_hotel_p2_2", "me_hotel_p2_3", "me_hotel_p2_4", "me_hotel_p2_5", "me_hotel_p2_6")
+map_position = Vector2(-2170, -10)
+required_level = 9
+bonus_time_min = 45.0
+bonus_money = 540
+dirt_profile_id = "hotel_okna"

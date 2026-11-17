@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "me_od_patra"
+title = "Obchodní dům Brodec – okna pater"
+building_type = "Obchodní dům (3 vysoká podlaží)"
+location = "Město – Brodec, jih třídy"
+description = "Okna obou pater nad výlohami. První patro dosáhneš z dlouhého žebříku, druhé jen slaněním – na střechu vedou boční dveře, kotvicí body jsou nad každým sloupcem oken."
+dirt_level_text = "Střední (smog, prach)"
+recommended_equipment = "Výsuvný žebřík 6 m, úvazek a lano, stěrka 35 cm"
+reward_money = 5200
+reward_xp = 760
+bonus_goal = "Nepovinné: hotovo do 45 minut práce = +520 Kč."
+window_ids = PackedStringArray("me_od_p1_1", "me_od_p1_2", "me_od_p1_3", "me_od_p1_4", "me_od_p1_5", "me_od_p2_1", "me_od_p2_2", "me_od_p2_3", "me_od_p2_4", "me_od_p2_5")
+map_position = Vector2(-2230, 9)
+required_level = 8
+bonus_time_min = 45.0
+bonus_money = 520
+dirt_profile_id = "mesto_smog"

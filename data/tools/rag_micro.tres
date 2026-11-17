@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "rag_micro"
+display_name = "Mikrovláknový hadr"
+description = "Jemná mikrovlákna zachytí prach i mastné otisky. Širší a výrazně účinnější než starý hadr, hlavně na mastnotu a zaschlé kapky."
+kind = "rag"
+visual = "rag"
+color = Color(0.35, 0.62, 0.9, 1)
+price = 240
+shop_order = 2
+radius = 0.08
+strength = 5.4
+tough_penalty = 4.5
+wet_bonus = 3.2
+kind_mult = PackedFloat32Array(1, 1.25, 1, 1.1, 1.7, 1, 1)
+initial_press = 0.06
+soil_rate = 0.6

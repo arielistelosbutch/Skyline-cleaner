@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "me_cinzak_ulice"
+title = "Činžovní dům Palackého 18 – okna do ulice"
+building_type = "Činžovní dům (5 podlaží)"
+location = "Město – Brodec, jih třídy"
+description = "Společenství vlastníků objednává mytí všech oken bytů do ulice. Okna jsou menší, ale je jich hodně a vedou do čtyř pater – ideální práce pro lano. Na střechu se jde vchodem vedle lékárny."
+dirt_level_text = "Střední až silná (smog, zaschlé kapky)"
+recommended_equipment = "Úvazek a lano, odmašťovač, stěrka 30 cm"
+reward_money = 6400
+reward_xp = 880
+bonus_goal = "Nepovinné: hotovo do 55 minut práce = +640 Kč."
+window_ids = PackedStringArray("me_cinzak_p1_1", "me_cinzak_p1_2", "me_cinzak_p1_3", "me_cinzak_p1_4", "me_cinzak_p1_5", "me_cinzak_p2_1", "me_cinzak_p2_2", "me_cinzak_p2_3", "me_cinzak_p2_4", "me_cinzak_p2_5", "me_cinzak_p3_1", "me_cinzak_p3_2", "me_cinzak_p3_3", "me_cinzak_p3_4", "me_cinzak_p3_5", "me_cinzak_p4_1", "me_cinzak_p4_2", "me_cinzak_p4_3", "me_cinzak_p4_4", "me_cinzak_p4_5")
+map_position = Vector2(-2172, 9)
+required_level = 9
+bonus_time_min = 55.0
+bonus_money = 640
+dirt_profile_id = "mesto_smog"

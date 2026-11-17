@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "vm_panorama_vyssi"
+title = "Rezidence Panorama – 8. až 13. patro"
+building_type = "Bytový dům (14 podlaží)"
+location = "Velkoměsto – Horizont, jih bulváru"
+description = "Horní patra luxusní rezidence. Obyvatelé si stěžují na šmouhy po dešti. Dvacet čtyři oken vysoko nad náměstím – ideální práce pro drony."
+dirt_level_text = "Střední až silná (šmouhy, prach)"
+recommended_equipment = "Drony nebo závěsná plošina"
+reward_money = 18000
+reward_xp = 2100
+bonus_goal = "Nepovinné: hotovo do 80 minut práce = +1800 Kč."
+window_ids = PackedStringArray("vm_panorama_p8_1", "vm_panorama_p8_2", "vm_panorama_p8_3", "vm_panorama_p8_4", "vm_panorama_p9_1", "vm_panorama_p9_2", "vm_panorama_p9_3", "vm_panorama_p9_4", "vm_panorama_p10_1", "vm_panorama_p10_2", "vm_panorama_p10_3", "vm_panorama_p10_4", "vm_panorama_p11_1", "vm_panorama_p11_2", "vm_panorama_p11_3", "vm_panorama_p11_4", "vm_panorama_p12_1", "vm_panorama_p12_2", "vm_panorama_p12_3", "vm_panorama_p12_4", "vm_panorama_p13_1", "vm_panorama_p13_2", "vm_panorama_p13_3", "vm_panorama_p13_4")
+map_position = Vector2(36, 2611.5)
+required_level = 15
+bonus_time_min = 80.0
+bonus_money = 1800
+dirt_profile_id = "hotel_okna"

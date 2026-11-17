@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "obchod_naves"
+title = "Výlohy obchodu na návsi"
+building_type = "Obchod se smíšeným zbožím"
+location = "Venkov – náves"
+description = "Paní vedoucí si stěžuje na mastné otisky dětských rukou na výlohách. Mastnota vodou nejde – vezmi odmašťovač. Horní část výloh vyžaduje židli."
+dirt_level_text = "Střední (mastnota)"
+recommended_equipment = "Odmašťovač, mikrovláknový hadr, stěrka, židle"
+reward_money = 900
+reward_xp = 160
+bonus_goal = "Nepovinné: hotovo do 15 minut práce = +120 Kč."
+window_ids = PackedStringArray("obchod_w1_vyloha_l", "obchod_w2_vyloha_p", "obchod_w3_bok_l", "obchod_w4_bok_p")
+map_position = Vector2(-74, -15)
+required_level = 2
+bonus_time_min = 15.0
+bonus_money = 120

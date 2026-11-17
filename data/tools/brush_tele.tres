@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "brush_tele"
+display_name = "Rotační kartáč na teleskopické tyči"
+description = "Akumulátorová rotační hlava na výsuvné tyči. Točí se a myje sama – stačí ji přitlačit a pomalu s ní jezdit po skle, žádné drhnutí ze strany na stranu. Dosáhneš o 1,7 m výš. Na tyči má menší přítlak než ruční kartáč, ale odolnou špínu zvládne pořád dobře."
+kind = "rag"
+visual = "brush"
+color = Color(0.25, 0.55, 0.85, 1)
+price = 2600
+required_rep = 3
+required_level = 7
+shop_order = 9
+radius = 0.1
+strength = 4.2
+tough_penalty = 2.0
+wet_bonus = 3.2
+dry_mult = 0.85
+kind_mult = PackedFloat32Array(1, 1, 1.5, 1.5, 1.1, 1, 1.6)
+initial_press = 0.05
+reach_bonus = 1.7
+electric = true
+spin = 0.45

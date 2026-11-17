@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "novak_bungalow"
+title = "Bungalov Novákových"
+building_type = "Bungalov"
+location = "Venkov – Lipová Lhota"
+description = "Paní Nováková chce mít před nedělní návštěvou zase průhledná okna. Okna nikdo nemyl celou zimu – čekej prach, šmouhy od deště, pár zaschlých kapek a možná i dárek od ptáků."
+dirt_level_text = "Lehké až střední"
+recommended_equipment = "Starý hadr, saponát, dřevěná židle"
+reward_money = 480
+reward_xp = 90
+bonus_goal = "Nepovinné: hotovo do 15 minut práce = +80 Kč."
+window_ids = PackedStringArray("novak_w1_obyvak", "novak_w2_kuchyn", "novak_w3_loznice", "novak_w4_terasa", "novak_w5_pracovna", "novak_w6_koupelna")
+map_position = Vector2(20, -16)
+required_level = 1
+bonus_time_min = 15.0
+bonus_money = 80

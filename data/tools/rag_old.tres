@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "rag_old"
+display_name = "Starý hadr"
+description = "Obnošený bavlněný hadr. Malá plocha, volný pohyb všemi směry. Na odolnou špínu je potřeba víc tahů – nebo saponát."
+kind = "rag"
+visual = "rag"
+color = Color(0.86, 0.74, 0.45, 1)
+price = 0
+shop_order = 1
+radius = 0.068
+strength = 4.4
+tough_penalty = 6.0
+wet_bonus = 3.2
+initial_press = 0.05

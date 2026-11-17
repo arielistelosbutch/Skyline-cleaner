@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "dobry_zamestnavatel"
+display_name = "Servisní smlouva"
+description = "Roboti na okna jsou v obchodě o 15 % levnější."
+branch = "podnikani"
+tier = 2
+column = 0
+cost = 2
+max_rank = 1
+requires = PackedStringArray("vyhodny_nakup")
+effect = "robot_price"
+values = PackedFloat32Array(0.85)
+stage = 5

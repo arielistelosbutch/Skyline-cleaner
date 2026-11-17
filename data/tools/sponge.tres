@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "sponge"
+display_name = "Houbička"
+description = "Velká kontaktní plocha. Nasaje vodu i saponát a roztírá je po skle, takže namočí i bláto a mastnotu. Nasucho čistí slabě."
+kind = "rag"
+visual = "sponge"
+color = Color(0.98, 0.84, 0.25, 1)
+price = 160
+shop_order = 3
+radius = 0.1
+strength = 3.4
+tough_penalty = 5.0
+wet_bonus = 5.0
+dry_mult = 0.6
+kind_mult = PackedFloat32Array(1, 1, 1.9, 1, 1.4, 1.2, 1.2)
+initial_press = 0.03
+spreads = 1.0
+soil_rate = 0.8

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "dokonaly_lesk"
+display_name = "Dokonalý lesk"
+description = "Snazší dokončení posledních procent: okno se samo doleští už při 95 % místo 98 %."
+branch = "zrucnost"
+tier = 1
+column = 1
+cost = 1
+max_rank = 1
+requires = PackedStringArray("pevna_ruka")
+effect = "complete_threshold"
+values = PackedFloat32Array(0.95)
+stage = 2

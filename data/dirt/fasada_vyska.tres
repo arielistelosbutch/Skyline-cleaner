@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DirtProfile" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/dirt_profile.gd" id="1_dp"]
+
+[resource]
+script = ExtResource("1_dp")
+id = "fasada_vyska"
+display_name = "Výšková fasáda (prach, trus, šmouhy)"
+dust = 1.5
+streaks = 1.6
+drops = 1.2
+bird = 1.6
+mud = 0.0
+grease = 0.3
+pollen = 0.0
+heavy = 0.4

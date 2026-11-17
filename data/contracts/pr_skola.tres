@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "pr_skola"
+title = "Základní škola Javorov – patra do ulice"
+building_type = "Škola (3 podlaží)"
+location = "Předměstí – Javorov, jih ulice"
+description = "O prázdninách se myjí okna tříd. Široká okna v patrech jsou plná otisků dětských rukou a prachu. Na střechu vede schodiště od bočního vchodu, kotvicí body jsou nad každým sloupcem oken."
+dirt_level_text = "Střední (otisky, prach)"
+recommended_equipment = "Úvazek a lano, odmašťovač, stěrka 35 cm"
+reward_money = 4300
+reward_xp = 600
+bonus_goal = "Nepovinné: hotovo do 45 minut práce = +450 Kč."
+window_ids = PackedStringArray("pr_skola_p1_1", "pr_skola_p1_2", "pr_skola_p1_3", "pr_skola_p1_4", "pr_skola_p1_5", "pr_skola_p2_1", "pr_skola_p2_2", "pr_skola_p2_3", "pr_skola_p2_4", "pr_skola_p2_5")
+map_position = Vector2(2014, 12)
+required_level = 7
+bonus_time_min = 45.0
+bonus_money = 450
+dirt_profile_id = "skola_okna"

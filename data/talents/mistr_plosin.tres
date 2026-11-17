@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TalentData" format=3]
+
+[ext_resource type="Script" path="res://scripts/talents/talent_data.gd" id="1_t"]
+
+[resource]
+script = ExtResource("1_t")
+id = "mistr_plosin"
+display_name = "Mistr plošin"
+description = "Rychlejší ovládání závěsné plošiny."
+branch = "technika"
+tier = 3
+column = 0
+cost = 2
+max_rank = 1
+requires = PackedStringArray("vyskovy_specialista")
+effect = "platform_speed"
+values = PackedFloat32Array(1.4)
+stage = 4

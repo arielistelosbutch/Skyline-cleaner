@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "sklenik_dvorakova"
+title = "Skleník paní Dvořákové"
+building_type = "Skleník"
+location = "Venkov – zahrada za domem Dvořákových"
+description = "Rajčata potřebují světlo! Skleník je pokrytý žlutým pylem z kvetoucích stromů a prachem. Pyl jde dolů snadno, ale je ho všude hodně – hodí se široký nástroj."
+dirt_level_text = "Lehké (pyl na velké ploše)"
+recommended_equipment = "Gumová stěrka nebo houbička, saponát"
+reward_money = 650
+reward_xp = 120
+bonus_goal = "Nepovinné: hotovo do 15 minut práce = +90 Kč."
+window_ids = PackedStringArray("sklenik_w1", "sklenik_w2", "sklenik_w3", "sklenik_w4", "sklenik_w5", "sklenik_w6", "sklenik_w7", "sklenik_w8")
+map_position = Vector2(9, 25)
+required_level = 1
+bonus_time_min = 15.0
+bonus_money = 90

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "tele_squeegee"
+display_name = "Teleskopická tyč se stěrkou 30 cm"
+description = "Stěrka na výsuvné tyči s kloubem. Tahy vysoko nad hlavou bez žebříku navíc – o 1,7 m výš. Jako každá stěrka potřebuje mokré sklo."
+kind = "rag"
+visual = "squeegee"
+color = Color(0.2, 0.5, 0.75, 1)
+price = 1150
+required_rep = 2
+required_level = 4
+shop_order = 7
+shape = "blade"
+radius = 0.04
+blade_width = 0.3
+blade_depth = 0.02
+strength = 9.5
+tough_penalty = 2.8
+wet_bonus = 6.5
+dry_mult = 0.12
+initial_press = 0.0
+stroke_bonus = 0.8
+dries = 0.9
+reach_bonus = 1.7

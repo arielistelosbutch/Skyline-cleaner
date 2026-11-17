@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "detergent_basic"
+display_name = "Základní saponát"
+description = "Rozprašovač s vodou a saponátem. Namočená špína jde dolů zhruba čtyřikrát snáz. Stékající kapky po sobě nechávají čisté stopy. Na mastnotu jen slabě."
+kind = "spray"
+visual = "bottle"
+color = Color(0.3, 0.72, 0.86, 1)
+price = 0
+shop_order = 10
+spray_radius = 0.17
+grease_power = 0.3
+dissolve = 1.0
+evaporation = 1.0

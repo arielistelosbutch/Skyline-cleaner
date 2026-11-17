@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="ContractData" format=3]
+
+[ext_resource type="Script" path="res://scripts/contracts/contract_data.gd" id="1_c"]
+
+[resource]
+script = ExtResource("1_c")
+id = "pr_kavarna"
+title = "Kavárna U Lípy"
+building_type = "Kavárna s bytem v patře"
+location = "Předměstí – Javorov, jih ulice"
+description = "Majitelka kavárny chce před víkendem zářící výlohy. Velká skla u kuchyně mají mastný film od kávovaru a pečení, okna bytu v patře jsou jen zaprášená. Na patro vezmi žebřík."
+dirt_level_text = "Střední (mastnota)"
+recommended_equipment = "Odmašťovač, mikrovláknový hadr, stěrka 35 cm, žebřík"
+reward_money = 1700
+reward_xp = 280
+bonus_goal = "Nepovinné: hotovo do 22 minut práce = +220 Kč."
+window_ids = PackedStringArray("pr_kavarna_w1", "pr_kavarna_w2", "pr_kavarna_w3", "pr_kavarna_w4", "pr_kavarna_w5", "pr_kavarna_w6")
+map_position = Vector2(1954, 9)
+required_level = 4
+bonus_time_min = 22.0
+bonus_money = 220
+dirt_profile_id = "kuchyn_mastnota"

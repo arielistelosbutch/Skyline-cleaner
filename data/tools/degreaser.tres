@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ToolData" format=3]
+
+[ext_resource type="Script" path="res://scripts/cleaning/tool_data.gd" id="1_tool"]
+
+[resource]
+script = ExtResource("1_tool")
+id = "degreaser"
+display_name = "Odmašťovač"
+description = "Rozpustí mastné otisky a kuchyňský film. Na běžný prach funguje jako obyčejný saponát."
+kind = "spray"
+visual = "bottle"
+color = Color(0.95, 0.55, 0.2, 1)
+price = 280
+shop_order = 11
+spray_radius = 0.16
+grease_power = 1.0
+dissolve = 1.1
+evaporation = 1.0
