@@ -41,6 +41,11 @@ func _ready() -> void:
 	cbs.button_pressed = Settings.seasons
 	cbs.toggled.connect(func(on: bool) -> void: Settings.seasons = on)
 	add_child(cbs)
+	var cbu := CheckBox.new()
+	cbu.text = "Při spuštění hledat novou verzi hry"
+	cbu.button_pressed = Settings.check_updates
+	cbu.toggled.connect(func(on: bool) -> void: Settings.check_updates = on)
+	add_child(cbu)
 	add_child(UITheme.label("Grafika", 18, UITheme.TEXT, true))
 	var aa_row := HBoxContainer.new()
 	aa_row.add_theme_constant_override("separation", 10)

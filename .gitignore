@@ -4,7 +4,6 @@
 *.translation
 
 # Exporty a buildy (nahrávají se do GitHub Releases, ne do repozitáře)
-export_presets.cfg
 build/
 builds/
 export/

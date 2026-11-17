@@ -21,6 +21,8 @@ var seasons := true
 var aa_mode := 2
 var render_scale := 1.0
 var fullscreen := false
+## Při spuštění se podívat na GitHub, jestli nevyšla nová verze.
+var check_updates := true
 
 const AA_NAMES := ["Vypnuto", "Rychlé (FXAA)", "MSAA 2×", "MSAA 4×"]
 
@@ -46,6 +48,7 @@ func load_settings() -> void:
 	aa_mode = clampi(int(cf.get_value("video", "aa_mode", aa_mode)), 0, AA_NAMES.size() - 1)
 	render_scale = clampf(float(cf.get_value("video", "render_scale", render_scale)), 0.5, 1.0)
 	fullscreen = bool(cf.get_value("video", "fullscreen", fullscreen))
+	check_updates = bool(cf.get_value("game", "check_updates", check_updates))
 
 
 func save_settings() -> void:
@@ -62,6 +65,7 @@ func save_settings() -> void:
 	cf.set_value("video", "aa_mode", aa_mode)
 	cf.set_value("video", "render_scale", render_scale)
 	cf.set_value("video", "fullscreen", fullscreen)
+	cf.set_value("game", "check_updates", check_updates)
 	cf.save(PATH)
 
 

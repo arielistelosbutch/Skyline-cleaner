@@ -1,0 +1,95 @@
+# Sestaví Windows verzi hry a přiloží ji k vydání na GitHubu.
+# Stačí na webu založit vydání (Releases → Draft a new release) s tagem typu v0.8.0
+# a dát Publish. Za pár minut se k němu samo přidá ClearView-windows.zip
+# a hry hráčů si novou verzi při dalším spuštění nabídnou.
+name: Sestavit vydání
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag vydání (např. v0.8.0) – sestaví a přiloží zip znovu"
+        required: true
+
+permissions:
+  contents: write
+
+env:
+  GODOT_VERSION: "4.7.2"
+
+jobs:
+  windows:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Zjistit verzi z tagu
+        id: ver
+        env:
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: |
+          VERSION="${TAG#v}"; VERSION="${VERSION#V}"
+          if ! echo "$VERSION" | grep -Eq '^[0-9]+(\.[0-9]+){0,2}$'; then
+            echo "::error::Tag '$TAG' nevypadá jako číslo verze (čekám třeba v0.8.0)."; exit 1
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name || github.ref }}
+
+      - name: Nastavit verzi hry podle tagu
+        run: |
+          sed -i 's/^config\/version=.*/config\/version="${{ steps.ver.outputs.version }}"/' project.godot
+          grep '^config/version' project.godot
+
+      - name: Godot z cache
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: ~/godot
+          key: godot-${{ env.GODOT_VERSION }}-win-templates
+
+      - name: Stáhnout Godot a šablony pro export
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          set -e
+          mkdir -p ~/godot && cd ~/godot
+          B=https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable
+          curl -sSfLO $B/SHA512-SUMS.txt
+          curl -sSfLO $B/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip
+          curl -sSfLO $B/Godot_v${GODOT_VERSION}-stable_export_templates.tpz
+          grep -E " Godot_v${GODOT_VERSION}-stable_(linux\.x86_64\.zip|export_templates\.tpz)$" SHA512-SUMS.txt | sha512sum -c -
+          unzip -q Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip
+          mkdir templates
+          unzip -qj Godot_v${GODOT_VERSION}-stable_export_templates.tpz \
+            templates/windows_release_x86_64.exe templates/windows_debug_x86_64.exe templates/version.txt -d templates
+          rm -f *.tpz *.zip
+
+      - name: Export pro Windows
+        run: |
+          set -e
+          T=~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+          mkdir -p $T && cp ~/godot/templates/* $T/
+          G=~/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64
+          mkdir -p build
+          $G --headless --path . --import || true
+          $G --headless --path . --export-release "Windows Desktop" build/ClearView.exe
+          test -s build/ClearView.exe
+          cd build && zip -9 ClearView-windows.zip ClearView.exe && ls -la
+
+      - name: Přiložit zip k vydání
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "${{ steps.ver.outputs.tag }}" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "${{ steps.ver.outputs.tag }}" build/ClearView-windows.zip --clobber --repo "$GITHUB_REPOSITORY"
+          else
+            echo "Vydání ${{ steps.ver.outputs.tag }} neexistuje – zip je jen v artefaktech tohoto běhu."
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ClearView-windows-${{ steps.ver.outputs.version }}
+          path: build/ClearView-windows.zip
