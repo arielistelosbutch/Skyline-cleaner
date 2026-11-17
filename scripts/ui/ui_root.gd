@@ -15,6 +15,9 @@ var main_menu: Control
 var _pause_box: VBoxContainer
 var _settings: SettingsPanel
 var _in_menu := true
+var update_dialog: UpdateDialog
+var _update_btn: Button
+var _update_offered := false
 
 
 var _screen: Control
@@ -44,6 +47,11 @@ func _ready() -> void:
 	_screen.add_child(shop)
 	_build_pause()
 	_build_main_menu()
+	update_dialog = UpdateDialog.new()
+	_screen.add_child(update_dialog)
+	update_dialog.dismissed.connect(_on_update_dialog_closed)
+	Updater.update_available.connect(func(_info: Dictionary) -> void: _maybe_show_updates())
+	Updater.whats_new_ready.connect(func(_v: String, _n: String) -> void: _maybe_show_updates())
 
 
 func _fit_screen() -> void:
@@ -86,6 +94,11 @@ func _build_pause() -> void:
 	_btn(_pause_box, "Nastavení", func() -> void:
 		_pause_box.visible = false
 		_settings.visible = true)
+	_update_btn = _btn(_pause_box, "Aktualizovat hru", func() -> void:
+		SaveManager.save_game(true)
+		pause_menu.visible = false
+		update_dialog.show_update(Updater.available))
+	_update_btn.visible = false
 	_btn(_pause_box, "Uložit a ukončit hru", func() -> void:
 		SaveManager.save_game(true)
 		get_tree().quit())
@@ -142,7 +155,7 @@ func _build_main_menu() -> void:
 		sp.visible = not sp.visible
 		menu_settings.visible = sp.visible)
 	menu_settings.closed.connect(func() -> void: sp.visible = false)
-	var foot := UITheme.shadow_label("Etapa 2 – nástroje, obchod, talenty a nové zakázky  ·  Godot 4", 15, Color(1, 1, 1, 0.75))
+	var foot := UITheme.shadow_label("Verze %s" % Updater.current_version(), 15, Color(1, 1, 1, 0.75))
 	UITheme.place(foot, Vector2(0.0, 1.0), Vector2(90, -50), Vector2(700, 30))
 	main_menu.add_child(foot)
 	for b in v.get_children():
@@ -172,6 +185,40 @@ func show_main_menu() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	if player:
 		player.ui_open = true
+	_maybe_show_updates()
+
+
+# ------------------------------------------------------------------ aktualizace
+
+## Ukáže novinky po aktualizaci, případně nabídku nové verze (v menu okno, ve hře jen upozornění).
+func _maybe_show_updates() -> void:
+	if update_dialog == null or update_dialog.visible:
+		return
+	if not Updater.available.is_empty():
+		_update_btn.text = "Aktualizovat na verzi %s" % Updater.available.version
+		_update_btn.visible = true
+	if not Updater.pending_whats_new.is_empty():
+		if not _in_menu:
+			return  # novinky počkají do příštího menu; hráče nevytrhávej
+		var w := Updater.pending_whats_new
+		Updater.pending_whats_new = {}
+		Updater.mark_whats_new_seen(w.version)
+		update_dialog.show_whats_new(w.version, w.notes)
+		return
+	if Updater.available.is_empty() or _update_offered:
+		return
+	_update_offered = true
+	if _in_menu:
+		update_dialog.show_update(Updater.available)
+	else:
+		Events.toast("Vyšla nová verze hry %s. Aktualizuješ ji v menu pauzy [Esc]." % Updater.available.version, "info")
+
+
+func _on_update_dialog_closed() -> void:
+	if _in_menu:
+		_maybe_show_updates()  # po novinkách případně ještě nabídka další verze
+	elif not any_open():
+		close_all()
 
 
 func enter_game() -> void:
@@ -182,7 +229,7 @@ func enter_game() -> void:
 
 
 func any_open() -> bool:
-	return tablet.visible or pause_menu.visible or shop.visible
+	return tablet.visible or pause_menu.visible or shop.visible or (update_dialog != null and update_dialog.visible)
 
 
 func close_all() -> void:
@@ -191,6 +238,8 @@ func close_all() -> void:
 	shop.visible = false
 	_settings.visible = false
 	_pause_box.visible = true
+	if update_dialog and not Updater.installing:
+		update_dialog.visible = false
 	get_tree().paused = false
 	if not _in_menu:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
