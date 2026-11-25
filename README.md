@@ -11,6 +11,8 @@ kde ti pomáhají roboti a drony. Hrací doba zhruba 8 hodin, hra je celá v če
 **Windows:** v sekci [Releases](../../releases) stáhni nejnovější `ClearView-windows.zip`, rozbal ho a spusť
 `ClearView.exe`. Nic se neinstaluje. Windows může při prvním spuštění ukázat „Systém Windows ochránil váš počítač“,
 protože hra není podepsaná – klikni na *Další informace* → *Přesto spustit*.
+Další verze si hra stáhne sama: při spuštění nabídne **Aktualizovat teď** a po restartu ukáže, co je nového.
+Jak vydat novou verzi: [docs/VYDANI.md](docs/VYDANI.md).
 
 **Ze zdrojáků (jakýkoli systém):** stáhni [Godot 4.7.2](https://godotengine.org/download/archive/4.7.2-stable/),
 otevři v něm složku s projektem (Import → `project.godot`) a spusť hru klávesou F5.
